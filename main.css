@@ -1,0 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@keyframes spin{
+	from {transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);}
+	to {transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);}
+}
+
+#legend{
+	margin-top: 10px;
+}
+
+.titlu{
+	color: #006400;
+}
+
+select{
+	width: 25%;
+}
+
+body{
+	text-transform: uppercase;
+	font-family: 'Oswald';
+}
+
+.layout{
+	width: 700px;
+	margin: 0px auto 20px;
+	display: block;
+}
+
+.main{
+	margin-top: 20px;
+	border-top: 5px solid darkgreen;
+	min-height: 90vh;
+
+
+}
+
+header{
+	background-size:cover;
+	height: 100vh;
+}
+
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+#globe{	
+	background: url("media/globe.png") no-repeat scroll 0% 0% white;
+	border-radius:100%;
+	border:3px solid white;
+	height: 585px;
+	width: 588px;
+	margin-left: -290px;
+	margin-top: -290px;
+
+	animation-name: spin;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#presentation{
+	color: darkgreen;
+	text-align: center;
+}
+
+h1{
+	font-size: 3em;
+}
+
+#menu{
+	border-bottom: 5px solid darkgreen;
+	font-size:3em;
+	margin-bottom: 15px;
+}
+
+#menu a{
+	color:black;
+	text-decoration: none;
+	margin:5px 10px 5px 0px;
+}
+#menu a:hover{
+	color: green;
+}
+#mainScroll{
+	background: url("media/scroll.svg");
+	width: 5em;
+	height: 5em;
+	display:block;
+	margin: 0px auto;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid white;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 100%;
+	transition: all 0.2s ease-in-out 0s;
+}
+#mainScroll:hover{
+	background-color: rgba(0,0,0,0.5);
+}
+#footer{
+	color:grey;
+}

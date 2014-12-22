@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head> <title> Indicatori macroeconomici </title> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<link rel="stylesheet" href="main.css" type="text/css"/>
+<body>
+	
+	<header>
+		<div id="globe" class="middle"></div>
+		<div id="presentation" class="middle">
+	 		 <h1>Marile puteri economice</h1>
+	 		 <h2>Reduse la numere, grafice si tabele</h2>
+	 		 <a id="mainScroll" href="#doi"></a>
+	 	</div>
+	</header>
+
+	<div class="main layout" id="doi">
+		<div id="menu">
+		<a href="#">Grafic</a> &bull; <a href="##">Resurse</a>
+		</div>
+		<span>Pentru a genera graficul, alegeti caracteristicile ce vreti reprezentate pe axa Ox, respectiv Oy<br/>X:
+<select id="one">
+<option>Investment</option>
+<option>Gross national savings</option>
+<option>Inflation, average consumer prices</option>
+<option>General government revenue</option>
+<option>Current account balance</option>
+</select>
+</span>
+<span>Y:
+<select id="two">
+<option>Investment</option>
+<option>Gross national savings</option>
+<option>Inflation, average consumer prices</option>
+<option>General government revenue</option>
+<option>Current account balance</option>
+</select>
+</span>
+<button id="go">DESENEAZA</button>
+
+	<canvas id="legend" width="700" height="90">
+		CANVAS NOT SUPPORTED</canvas>
+	  <canvas id="paper" width="700" height="450">
+	  	CANVAS NOT SUPPORTED, AGAIN</canvas>
+<br/><br/>
+<span>
+Pentru a genera tabelul dorit, selecteaza capetele intervalului.<br/>Anul de inceput:
+<select id="an1">
+</select> Anul de sfarsit:
+<select id="an2">
+</select> 
+<button id="gen">GENEREAZA</button>
+</span>
+<br/><br/>
+<table id="tabel">
+</table>
+
+	</div>
+	 <span class="layout" id="footer">
+&copy; Student Piscuc Dinu, CSIE, ASE, BUCURESTI, 2014
+	</span>
+	 
+
+</body>
+<script type="text/javascript" src="lib/jquery-1.11.1.js" ></script>
+<script type="text/javascript" src="magic.js"></script>
+</html>
